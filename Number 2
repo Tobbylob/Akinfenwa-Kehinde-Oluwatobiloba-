@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Sololearn
+{
+class Program{
+static int smallestIndex (int[]arrayElements, int size){
+int minimum = arrayElements[0];
+int minimumIndex = 0;
+for (int i = 0; i < size; i++){
+if (arrayElements [i] < minimum){
+minimum = arrayElements [i];
+minimumIndex = i;
+}
+}
+ return minimumIndex;
+}
+  static void Main(string[] args)
+ {
+  int [] OurArray = {1,2,3,4,5};
+  int answer = smallestIndex (OurArray, OurArray.Length);
+  Console.WriteLine(answer);
+ }
+}
+}
