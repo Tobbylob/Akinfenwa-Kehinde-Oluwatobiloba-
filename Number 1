@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Sololearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int p,q,r;
+    Console.WriteLine("Enter the number");
+    p = int.Parse(Console.ReadLine());
+    q = int.Parse(Console.ReadLine());
+    r = int.Parse(Console.ReadLine());
+    
+   if(p<=q && q<=r)
+    {
+    Console.WriteLine (p+","+q+","+r);
+    }
+    else if(p<=r && r<=q)
+    {
+    Console.WriteLine(p+","+r+","+q);
+    }
+    else if(q<=p && p<=r)
+    {
+    Console.WriteLine(q+","+p+","+r);
+    }
+    else if (r<=q && q<=p)
+    {
+    Console.WriteLine(r+","+q+","+p);
+    }
+    else if(q<=r && r<=p)
+    {
+    Console.WriteLine(q+","+r+","+p);
+    }
+    else 
+    {
+    Console.WriteLine(r+","+p+","+q);
+    }
+    Console.ReadLine();
+     
+     
+        }
+    }
+}
